@@ -1,0 +1,71 @@
+.condidate-container {
+    max-width: 257px;
+    box-shadow: 0px 1px 3px 2px #908d8d;
+    border: 1px solid #a7a3a3;
+    border-radius: 17px;
+}
+.cd-candidate {
+    padding: 11px 10px 5px 10px;
+    border-radius: 17px;
+}
+.condidate-hader p {
+    font-size: 12px;
+}
+.condidate-hader span{
+    float: right;
+}
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  .single-chart {
+    width: 73%;
+    justify-content: space-around ;
+    float: right;
+  }
+  
+  .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.blue .circle {
+    stroke: #3c9ee5;
+  }
+  
+  .percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
+  .cd-plan, .cd-plan .fa{
+      color: #bb5cec;
+  }
+  @media only screen and (max-width: 768px){
+  .condidate-container {
+    max-width: none;
+  }
+}

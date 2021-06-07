@@ -1,0 +1,92 @@
+.dashboard-container{
+    background-color: black;
+    /* height: 46.1pc; */
+}
+.cd-container {
+    padding: 19px;
+}
+.arrow-right-btn {
+    position: absolute;
+    right: 0;
+    top: 48px;
+  }
+@media only screen and (max-width: 768px) {
+    .arrow-right-btn {
+        display: none;
+    }
+    .cd-total-candi .row >div {
+        margin-top: 10px;
+    }
+}
+ul li {
+    list-style: none;
+}
+p {
+    margin-bottom: 0px;
+}
+.cd-chart-header .nav-list {
+    display: flex;
+}
+.cd-chart-header .nav-list nav ul{
+    display: flex;
+    margin-left: 47px;
+    margin-bottom: 0;
+}
+.cd-chart-header .nav-list nav ul li{
+    margin-left: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.cd-chart-header .nav-list nav ul li .fa-ellipsis-h{ 
+    transform: rotate(90deg);
+}
+.line-chart-container {
+    margin-top: 20px;
+}
+.cd-line-chart {
+    box-shadow: -1px 1px 3px 2px #3e3c3c;
+    border-radius: 12px;
+}
+.cd-chart-header {
+    padding: 10px 1px 0px 5px;
+}
+/* total application coponent */
+.cd-total-application {
+    box-shadow: -1px 1px 3px 2px #3e3c3c;
+    border-radius: 12px;
+}
+
+.cd-toal-c,.cd-new-applicant {
+    padding: 10px 12px 5px 12px;
+}
+.cd-referals {
+    padding: 23px;
+}
+.cd-toal-c p{
+    margin-bottom: 8px;
+}
+.cd-re-compaings {
+    margin-top: 12px;
+}
+.Compaings-40-sent span p,.Compaings-40-sent span {
+    color: red;
+}
+@media only screen and (max-width: 768px) {
+    .cd-chart-header .nav-list nav ul li{
+        margin-left: 20px;
+        font-size: 10px;
+    }
+    .cd-chart-header .nav-list nav ul{
+    margin-left: -23px;
+    }
+    .cd-chart-header .nav-list nav p{
+        text-align: center;
+    }
+    .cd-total-application {
+        margin-top: 12px;
+    }
+    /* .Compaings-40-sent {
+        display: none;
+    } */
+}
+

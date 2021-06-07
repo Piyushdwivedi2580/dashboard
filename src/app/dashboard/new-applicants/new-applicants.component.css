@@ -1,0 +1,16 @@
+.cd-candidate-contact img {
+    border-radius: 50%;
+    width: 40px;
+}
+.cd-candidate-contact p {
+    font-size: 10px;
+    margin-bottom: 0px;
+}
+.cd-candidate-contact p span {
+    color: blue;
+    font-size: 8px;
+}
+.cd-new-ap {
+    margin-top: 22px;
+}
+ 

@@ -1,0 +1,76 @@
+    <div class="container-fluid">
+        <div class="cd-main-header">
+                <a href="#0" class="cd-logo"><img width="30" src="./assets/images/mylogo1.jpg" alt="Logo"></a>
+                <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+                <div class="cd-header-profile pull-right"> 
+                    <div class="row">
+                        <div class="cd-notification">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                            <span id="count_notification" style="color: green;font-size: 5px;position: absolute;"><i class="fa fa-circle"></i></span>
+                        </div>
+                        <div class="cd-profile-name">
+                            <p>John Bayer</p>
+                        </div>
+                        <div class="cd-prfile-image">
+                            <a routerLink="profile" ><img width="24" src="./assets/images/man-avatar-profile.jpg" alt="profile">
+                                &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cd-dashboard">
+                    <nav class="cd-nav"style="float: left;">
+                        <ul class="cd-top-nav">
+                            <li>
+                                 <h3>Dashboard</h3>
+                                 <p><span id="day_name"></span>, <span id="current_date"></span> </p>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="cd-nav">
+                        <ul class="cd-top-nav">
+                            <li><a href="#0">
+                                <button type="button" class="btn btn-primary" style="padding: 2px 12px 2px 12px;">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add &nbsp;</button> </a></li>
+                            <li class=" header_search">
+                                <a href="#0"><i class="fa fa-search" aria-hidden="true"></i><span>Search for Application here</span> </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> <!-- .cd-main-header -->
+        
+            <div class="cd-main-content">
+                <nav class="cd-side-nav">
+                    <ul>
+                        <li class="has-children  active">
+                            <a routerLink="home" title="Home"><i class="fa fa-home"></i></a>
+                        </li>
+                        <li class="has-children  ">
+                            <a routerLink="list" title="list"><i class="fa fa-list-alt" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="has-children ">
+                            <a routerLink="briefcase" title="briefcase"><i class="fa fa-briefcase" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="has-children ">
+                            <a routerLink="folder" title="folder"><i class="fa fa-folder" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="has-children ">
+                            <a routerLink="Calendar" title="Calendar"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="has-children ">
+                            <a routerLink="Participant" title="Participant"><i class="fa fa-users" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="has-children ">
+                            <a routerLink="keyboard" title="keyboard"><i class="fa fa-keyboard-o" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="has-children ">
+                            <a routerLink="Sign-out" title="Sign-out"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+        
+            
+            </div>
+   </div>
+<router-outlet></router-outlet>
+    

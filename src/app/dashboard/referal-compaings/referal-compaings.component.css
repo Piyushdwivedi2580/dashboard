@@ -1,0 +1,12 @@
+.cd-ref-name {
+    float: right;
+}
+.cd-ref-name span {
+    color: green;
+    font-size: 8px;
+}
+.cd-ref-name span .fa-arrow-up{
+    color: green;
+    font-size: 12px;
+    transform: rotate(45deg);
+}

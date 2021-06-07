@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="main-container"> 
+        <div class="dashboard-container">
+          <div class="cd-container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                    <div class="cd-total-candi">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <app-total-application-candidate [hero]='total_c1'></app-total-application-candidate>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <app-total-application-candidate [hero]='total_c2'></app-total-application-candidate>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <app-total-application-candidate [hero]='total_c3'></app-total-application-candidate>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-right-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                    <div class="line-chart-container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                                <div class="cd-line-chart">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="cd-chart-header">
+                                                <div class="nav-list">
+                                                    <nav>
+                                                        <p>Application Received</p>
+                                                    </nav>
+                                                    <nav>
+                                                        <ul>
+                                                            <li>This Year </li>
+                                                            <li>This Week</li>
+                                                            <li>Today</li>
+                                                            <li><i class="fa fa-download"></i> Download Report</li>
+                                                            <li><i class="fa fa-ellipsis-h"></i> </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="">
+                                                <app-chart-graph></app-chart-graph>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="cd-total-application">
+                                    <div class="cd-toal-c">
+                                        <p>Total Application</p>
+                                        <div class="cd-t-a-component">
+                                            <app-total-application [progress]="total_application1" ></app-total-application>
+                                        </div>
+                                        <div class="cd-t-a-component">
+                                            <app-total-application [progress]="total_application2" ></app-total-application>
+                                        </div>
+                                        <div class="cd-t-a-component">
+                                            <app-total-application [progress]="total_application3" ></app-total-application>
+                                        </div>
+                                        <div class="cd-t-a-component">
+                                            <app-total-application [progress]="total_application4" ></app-total-application>
+                                        </div>
+                                        <div class="cd-t-a-component">
+                                            <app-total-application [progress]="total_application5" ></app-total-application>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="cd-re-compaings">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                                <div class="cd-total-application">
+                                    <div class="cd-referals">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-6">
+                                                <p>Referals and Compaings Stats</p>
+                                            </div>
+                                            <div class="col-6 Compaings-40-sent">
+                                                <span>
+                                                    <i style="color:red" class="fa fa-paper-plane" aria-hidden="true"></i>
+                                                    <span> 40 Compaings sent in total</span>
+                                                    <p>&nbsp;&nbsp; 4 Compaings sent in last month</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="cd-r-compaings">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <app-referal-compaings [referaldata]="referalvalue1"></app-referal-compaings>
+                                                </div>
+                                                <div class="col-6" style="border-left: 1px solid #444343;">
+                                                    <app-referal-compaings [referaldata]="referalvalue2"></app-referal-compaings>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="cd-total-application">
+                                    <div class="cd-new-applicant">
+                                        <div class="chart-container" style="width:100%;">
+                                            <canvas id="circleChart" width="700" height="250" ></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="cd-total-application">
+                        <div class="cd-new-applicant">
+                           <div class="text-center" >
+                            <p>Hello John Bayer,</p>
+                            <p>You have a New Applicants Today!</p>
+                            <img width="250" src="./assets/images/applicants.png" alt="Applicant">
+                           </div>
+                            <div class="row">
+                                <div class="col-10">New Applicants</div>
+                                <div class="col-2"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="cd-new-appli">
+                                <app-new-applicants></app-new-applicants>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

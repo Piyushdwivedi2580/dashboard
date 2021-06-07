@@ -1,0 +1,43 @@
+<!-- <div class="main-container"> -->
+    <div class="condidate-container">
+        <!-- <div class="cd-box-candidate"> -->
+            <div class="cd-candidate" [style.background-color]="hero.bgcolor">
+                <div class="condidate-hader">
+                    <div class="row">
+                        <div class="col-9">
+                            <p>{{hero.header}}</p>
+                        </div>
+                        <div class="col-3">
+                            <span><i class="fa fa-ellipsis-h" aria-hidden="true"></i></span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="condidate-hader">
+                    <div class="row">
+                        <div class="col-6" style="margin-top: 16px;">
+                            <h3>{{hero.C_number}}</h3>
+                            <p class="cd-plan" [style.color]="hero.color"><i [style.color]="hero.color" class="fa fa-plane" aria-hidden="true"></i> +{{hero.plus_perce}}</p>
+                        </div>
+                        <div class="col-6">
+                            <div class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart blue">
+                                  <path class="circle-bg" [style.stroke]="hero.bdcolor"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <path class="circle"  [style.stroke]="hero.color" [style.stroke-dasharray]="hero.percentage"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <text [style.fill]="hero.color" x="18" y="20.35" class="percentage">+{{hero.percentage_type}}%</text>
+                                </svg>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+<!-- </div> -->

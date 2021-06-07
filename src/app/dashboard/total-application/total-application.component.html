@@ -1,0 +1,13 @@
+ 
+    <div class="cd-t-appli">
+        <div class="row">
+            <div class="col-5">
+                <i class="fa fa-circle" [style.color]="progress.color"></i> &nbsp;<span [style.color]="progress.color"> {{progress.name}}</span>
+            </div>
+            <div class="col-7">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" [style.background]="progress.color" [style.max-width]="progress.percentage_type" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
